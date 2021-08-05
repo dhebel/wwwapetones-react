@@ -1,0 +1,6 @@
+{
+    "respuestas": [
+        {"id": 1, "nombre": "Pedro", "edad": 25, "gatos": "Si"},
+        {"id": 2, "nombre": "Pepito", "edad": 20, "gatos": "No"}
+    ]
+}

@@ -1,0 +1,128 @@
+/*NAVEGACION*/
+.nav{
+  display:flex;
+  background-color: aliceblue;
+  border-bottom: 3px solid black;
+}
+
+.logo{
+  height: 70px;
+}
+
+.links{
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Roboto", Sans-serif;
+  padding: 0px;
+  margin: 0px;
+  display:inline-flex;
+  justify-content: flex-start;
+  vertical-align: baseline;
+  line-height: 1.5;
+  align-content: center;
+  align-items: center;
+}
+
+.link-container{
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  list-style: none;
+  padding: 13px 0px;
+  text-transform: uppercase;
+}
+
+.link-container :hover{
+  border-bottom: 5px solid #027B76;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+  padding: 11px 20px;
+}
+
+a.active_class{
+  color: #FF7724;
+  border-bottom: 5px solid #FF7724;
+}
+
+
+/*ENCUESTA*/
+.body-encuesta{
+  position: absolute;
+  background-color: cornsilk;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-encuesta{
+  height: 300px;
+  width: 350px;
+  background-color: aliceblue;
+  border: 3px solid black;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.input{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 25px;
+  margin: 0px 50px;
+}
+
+.enviar{
+  margin: 0px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+/*MANTENEDOR*/
+.body-mantenedor{
+  position: absolute;
+  background-color: cornsilk;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 50px;
+}
+
+.encabezado{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+
+.respuesta{
+  width: 50%;
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.body-mantenedor label{
+  width: 20%;
+}
