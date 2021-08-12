@@ -10,3 +10,9 @@ Inetgrantes del equipo Wwwapetones:
 - Valerie Jiménez
 
 - Daniel Hebel
+
+Para ejecutar el código:
+
+npm install
+
+npm start
