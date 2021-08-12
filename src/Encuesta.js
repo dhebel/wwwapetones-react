@@ -8,7 +8,7 @@ const Encuesta = () => {
         let edad = document.getElementById("edad").value;
         let gatos = document.getElementById("gatos").value;
       
-      fetch('http://localhost:3001/gatitos', {
+      fetch('https://b4lo85pvp3.execute-api.us-east-2.amazonaws.com/desarrollo/encuesta', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

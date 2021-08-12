@@ -7,12 +7,14 @@ const Mantenedor = () => {
     useEffect(() => { getRespuestas(); }, []);
 
     function getRespuestas() {
-        fetch('http://localhost:3001')
+        fetch('https://b4lo85pvp3.execute-api.us-east-2.amazonaws.com/desarrollo/encuesta')
           .then(response => {
             return response.json();
           })
           .then(data => {
-            setRespuestas(data);
+            console.log(data.response)
+            setRespuestas(data.response.Items);
+            console.log(respuestas)
         });
         
     }
@@ -20,7 +22,6 @@ const Mantenedor = () => {
     return (
         <div className="body-mantenedor">
             <div className="encabezado">
-                <label>Id</label>
                 <label>Nombre</label>
                 <label>Edad</label>
                 <label>¿Gatos?</label>
@@ -29,7 +30,6 @@ const Mantenedor = () => {
                 respuestas.map(respuesta => {
                     return (
                         <div className="respuesta">
-                            <label>{respuesta.id}</label>
                             <label>{respuesta.nombre}</label>
                             <label>{respuesta.edad}</label>
                             <label>{respuesta.gatos}</label>
